@@ -94,7 +94,7 @@
   .campo.invalid .err{display:block}
 
   /* ---------- Ranking drag & drop ---------- */
-  .rank-intro{font-size:13px;color:var(--gris);margin-bottom:14px}
+  .rank-intro{font-size:15.5px;color:var(--tinta);font-weight:500;margin-bottom:16px;line-height:1.5}
   .rank{list-style:none;display:flex;flex-direction:column;gap:10px}
   .rank li{
     display:flex;align-items:center;gap:12px;
@@ -168,13 +168,13 @@
   <!-- ============ PANTALLA 1: elegir ruta ============ -->
   <section id="s-inicio" class="screen active">
     <div class="card intro">
-      <h2>Cuéntanos tu experiencia con el Modelo UNITEC</h2>
-      <p>El Modelo UNITEC nos ha formado a todos de una manera única. Nos encantaría conocer tu vivencia: qué te aportó y qué recuerdas con más valor. Son unos minutos y tu voz ayuda a seguir fortaleciendo lo que nos hace especiales. Para empezar, dinos quién eres.</p>
+      <h2>Hola, cuéntanos tu experiencia</h2>
+      <p>El Modelo UNITEC nos ha formado a todos de una manera única. Nos encantaría conocer tu vivencia: ¿qué te aportó? ¿qué aprendizaje recuerdas con más valor? Son pocos minutos, tu voz ayuda a seguir en el fortalecimiento de lo que nos hace especiales.</p>
       <div class="roles">
         <button class="role" onclick="elegir('egresado')">
           <span class="flecha">→</span>
           <div class="rt">Soy egresado</div>
-          <div class="rd">Ya me gradué de UNITEC</div>
+          <div class="rd">Me gradué en UNITEC</div>
         </button>
         <button class="role" onclick="elegir('estudiante')">
           <span class="flecha">→</span>
@@ -326,13 +326,13 @@ const SHEETS_URL = "https://script.google.com/macros/s/AKfycbzPvKICMfSLEAoUG5pdR
 /* ---- Textos que cambian según la ruta ---- */
 const COPY = {
   egresado:{
-    anio:"¿En qué año te graduaste?",
+    anio:"¿En qué año iniciaste la carrera?",
     carrera:"¿Qué carrera cursaste?",
-    definicion:"Para ti, ¿qué es el Modelo UNITEC? Explícalo como si se lo describieras a alguien que nunca estudió ahí.",
-    rankIntro:"Ordena estos componentes según cuánto valor te aportaron durante y después de la carrera.",
+    definicion:"Para ti, ¿el Modelo UNITEC qué es?",
+    rankIntro:"Ordena los siguientes elementos (componentes), en cuanto al valor que te aportaron durante y después en tu formación en la carrera.",
     bloque4:"Transferencia real",
-    valor:"¿Qué de lo que aprendiste en UNITEC sigues usando hoy en tu vida profesional?",
-    brecha:"¿Hay algo que te hubiera gustado aprovechar más durante tu paso por UNITEC?",
+    valor:"¿De lo que aprendiste en UNITEC, qué continúas usando o utilizando en tu vida profesional?",
+    brecha:"¿Hay algo que te hubiese gustado aprovechar mucho más durante tu paso por UNITEC?",
     escala:"¿Recomendarías estudiar en UNITEC hoy?",
     porqueReco:"¿Por qué le das esa puntuación?",
     tagMin:"No lo recomendaría", tagMax:"Lo recomiendo totalmente",
@@ -348,10 +348,10 @@ const COPY = {
   estudiante:{
     anio:"¿En qué año entraste?",
     carrera:"¿Qué carrera cursas?",
-    definicion:"¿Qué es el Modelo UNITEC para ti? Explícalo con tus propias palabras.",
-    rankIntro:"Ordena estos componentes según cuánto valor le ves hoy.",
+    definicion:"Para ti, ¿el Modelo UNITEC qué es?",
+    rankIntro:"Ordena los siguientes elementos (componentes), en cuanto al valor que le ves hoy en tu formación.",
     bloque4:"Valor en tu día a día",
-    valor:"¿Qué de lo que has aprendido hasta ahora te da valor en tu día a día?",
+    valor:"¿De lo que has aprendido en UNITEC, qué continúas usando o utilizando en tu día a día?",
     brecha:"¿Hay algo del modelo que aún te cuesta encontrarle el sentido o te gustaría entender mejor?",
     escala:"¿Qué tan orgulloso te sientes de estudiar en UNITEC?",
     porqueReco:"¿Por qué le das esa puntuación?",
